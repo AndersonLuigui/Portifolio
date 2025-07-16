@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-display: auto; 
+}
+
+
+li {
+    padding-inline: 15px;
+}
+
+.navbox {
+    display: flex;
+    padding: 1em;
+    justify-content: right;
+}
+
+.navbox ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbox ul li {
+    text-align: center;
+    width: 100;
+    padding-inline: 30px;
+    list-style: none;
+    border-radius: 3px;
+}
+
+.navbox ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ADICIONANDO O EFEITO REVEAL - QUANDO O USUÁRIO ROLAR A PÁGINA OS CONTAINERS IRÃO APARECER */
+
+/* Estado inicial dos containers com classe reveal */
+
+
+.container, .containerXp, .containerFormacao, .containerProjetos, .containerContato {
+    min-height: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}

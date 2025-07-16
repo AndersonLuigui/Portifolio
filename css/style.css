@@ -9,21 +9,21 @@
 
 body, html {
     height: 100%;
-    background-color: #f9f9f9; /* cor de fundo leve */
+    background-color: #f9f9f9; 
 }
 
 .perfilHome {
     display: flex;
-    align-items: center;        /* Centraliza verticalmente */
-    justify-content: center;    /* Centraliza horizontalmente */
-    height: 100vh;              /* Ocupa a tela toda */
+    align-items: center;        
+    justify-content: center;    
+    height: 100vh;              
 }
 
 .perfil {
-    width: 100%;                   /* Ocupa a largura da tela */
-    max-width: 1250px;              /* Limita a largura máxima */
+    width: 100%;                   
+    max-width: 1250px;              
     padding: 50px;
-    overflow: hidden;              /* Impede que o conteúdo ultrapasse os limites */
+    overflow: hidden;              
 }
 
 
