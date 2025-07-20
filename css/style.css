@@ -42,7 +42,7 @@ body, html {
 
 /*ESTILIZAÇÃO DO BOTÃO INICIAR*/
 
-a {
+a, .textTitulo {
   display: block;
   width: 200px;
   height: 40px;

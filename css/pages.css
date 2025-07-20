@@ -32,6 +32,7 @@ li {
 }
 
 .navbox ul li a {
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
@@ -51,7 +52,7 @@ li {
 
 .reveal {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -60,6 +61,37 @@ li {
     transform: translateY(0);
 }
 
+.textTitulo {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;  
+    line-height: 80px;
+    font-size: 20px;  
+    padding: 1vh;
+}
+.textTitulo h1 {
+    display: inline-block; /* Ajusta ao tamanho do texto */
+    overflow: hidden; /* Esconde o texto enquanto não é "digitado" */
+    white-space: nowrap; /* Impede quebra de linha */
+    border-right: 3px solid #333; /* Cursor piscante */
+    animation: typing 2s steps(21, end) forwards; /* Remove o blink */
+
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 50%; border-right: 0; }
+}
+
+/* Animação do cursor piscante */
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+}
+
+
 /* ESTILIZANDO TIMELINE ------------------ ESTILIZANDO TIMELINE ------------------- ESTILIZANDO TIMELINE --------- */
 
 .timeline {
@@ -67,7 +99,7 @@ li {
     margin: 20px auto;
     padding: 20px 0;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 .timeline:before {
@@ -121,7 +153,7 @@ li {
     content: '';
     position: absolute;
     top: 24px;
-    right: 14px;
+    right: -25px;
     width: 10px;
     height: 10px;
     background: rgba(233, 33, 99, 1);
@@ -133,7 +165,7 @@ li {
     content: '';
     position: absolute;
     top: 24px;
-    left: -24px;
+    left: -25px;
     width: 10px;
     height: 10px;
     background: rgba(233, 33, 99, 1);
@@ -173,6 +205,7 @@ li {
     top: 12px;
     left: -165px;
 }
+
 
 /* RESPONSIVIDADE DA TIMELINE */
 
