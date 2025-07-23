@@ -71,21 +71,35 @@ li {
 
 /* ESTILIZAÇÃO DA PÁGINA CONTAINER - PROJECTS */
 
-.box, .box1, .box2, .box3{
+.box {
     position: relative;
     border-radius: 4px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     background-color: transparent;
-    width: 25vh;
-    height: 22vh;
+    width: 55vh;
+    height: 45vh;
     perspective: 1500px;
     border: 1.5px solid rgb(171, 171, 171);
-    background-color: red;
 }
+
+.box img {
+    align-items: center;
+    border-radius: 4px;
+    text-align: center;
+    width: 55vh;
+    height: 45vh;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+
+
 
 .container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -94,6 +108,24 @@ li {
     .container {
         display: grid;
     }
+}
+
+
+/* LABELS TÍTULOS DOS PROJETOS */
+.label {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    top: -20%;
+    left: 0;
+    backdrop-filter: blur(1.7px);
+    border-radius: 3px;
+}
+
+.label span {
+    color: white;
+    text-shadow: 2px 1px 1px #0000006c;
+    font-size: 20px;
 }
 
 
@@ -261,26 +293,21 @@ li {
 
 @media screen and (max-width: 768px) {
     .timeline ul li {
+        flex-direction: column;
         width: 100%;
-        text-align: left;
-        padding: 20px;
+        text-align: center;
+        padding: 15px;
     }
 
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before,
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time,
     .timeline:before {
         display: none;
     }
 
-    .timeline ul li:nth-child(odd):before,
-    .timeline ul li:nth-child(even):before {
-        left: 10px;
-        top: 20px;
-    }
-
-    .timeline ul li:nth-child(odd) .time,
-    .timeline ul li:nth-child(even) .time {
-        left: 40px;
-        top: 10px;
-    }
 }
 
 
