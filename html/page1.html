@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="titles.css">
     <title>Home</title>
 </head>
 <body>
@@ -26,26 +29,6 @@
 
     <div class="timeline">
         <ul>
-            <li class="hidden">
-                <div class="content">
-                    <h3>11º Depósito de Suprimentos</h3>
-                    <p>Início da carreira no Exército Brasileiro, atuando como Protocolista em atividades administrativas, com uso de Microsoft Office e Zimbra. Desenvolvi habilidades como atenção aos detalhes, organização e trabalho sob pressão.</p>
-                </div>
-                <div class="time">
-                    <h4>Março 2016</h4>
-                </div>
-            </li>
-
-
-            <li class="hidden">
-                <div class="content">
-                    <h3>Diretoria de Controle de Efetivos e Movimentações</h3>
-                    <p>Transferido para o Quartel General, atuei como Auxiliar do Comandante na Diretoria de Controle de Efetivos e Movimentações. Atribuições de alto nível exigiam responsabilidade, disciplina e comunicação eficiente. Recebi Título de Honra ao Mérito e Carta de Apresentação pelo desempenho excepcional.</p>
-                </div>
-                <div class="time">
-                    <h4>Fevereiro 2017</h4>
-                </div>
-            </li>
             <li class="hidden">
                 <div class="content">
                     <h3>Análise e Desenvolvimento de Sistemas</h3>
@@ -106,33 +89,94 @@
     </div>
 
     <div class="textTitulo reveal"><h1>...</h1></div>
-    <div class="textTitulo reveal"><h1>Projetos</h1></div>
     
+    <div class="textTitulo reveal"><h1>Projetos</h1></div>
 
 
     <!-- CÓDIGO TIMELINE ---------------------------- CÓDIGO TIMELINE ------------------ CÓDIGO TIMELINE ------- -->
 
     <div class="container reveal">
 
-        <div class="box"><img src="/img/1751057927875.jpeg" alt="SpotifyImg">
-            <div class="label">
-                <span>Spotify - MySQL</span>
+        
+
+        <div><h1>Curious English World</h1></div>
+
+
+        <div class="box" class="box mx-auto">
+            <div class="carousel">
+                <div class="carousel-inner" >
+                    <a href="https://curiousenglishworld.netlify.app" target="_blank">
+                        <img src="/img/curious1.png" alt="Curious English World 1" class="carousel-item active">
+                        <img src="/img/curious.png" alt="Curious English World 2" class="carousel-item">
+                    </a>
+                </div>
+                <button class="carousel-control prev">&#10094;</button>
+                <button class="carousel-control next">&#10095;</button>
             </div>
         </div>
-        <div class="box"><img src="/img/1751057927875.jpeg" alt="SpotifyImg">
-            <div class="label">
-                <span>Spotify - MySQL</span>
-            </div>
+        
+
+        <div class="explainProjects">
+            <span>
+                <p>
+                    O <strong>Curious English World</strong> é um projeto front-end desenvolvido com
+                    <strong>HTML, CSS, JavaScript e Bootstrap</strong>, criado com o objetivo de proporcionar
+                    uma experiência de aprendizagem de inglês simples e interativa.
+                </p>
+
+                <p>O site combina conteúdo educativo com recursos de usabilidade, como:</p>
+
+                <ul>
+                    <li>Textos em inglês sobre curiosidades culturais e históricas;</li>
+                    <li>Integração de áudio para prática de <em>listening</em> e pronúncia;</li>
+                    <li>Ferramenta de tradução integrada para ampliar o vocabulário.</li>
+                </ul>
+
+                <p>
+                    O projeto foi desenvolvido como forma de praticar boas práticas de front-end,
+                    aplicando conceitos de <strong>responsividade</strong>, <strong>semântica</strong>,
+                    <strong>acessibilidade</strong> e estilização com <strong>Bootstrap</strong>.
+                </p>
+
+                <p>
+                    Mais do que um exercício técnico, o <em>Curious English World</em> reflete minha paixão
+                    por tecnologia e educação, unindo aprendizado de idiomas e desenvolvimento web.
+                </p>
+
+            </span>
         </div>
-        <div class="box"><img src="/img/1751057927875.jpeg" alt="SpotifyImg">
-            <div class="label">
-                <span>Spotify - MySQL</span>
-            </div>
-        </div>
+
+
+        
+
     </div>
 
 
     <div class="containerXp reveal">
+                <div><h1>Curious English World</h1></div>
+
+
+        <div class="box" class="box mx-auto">
+            <div class="carousel">
+                <div class="carousel-inner" >
+                    <a href="https://curiousenglishworld.netlify.app" target="_blank">
+                        <img src="/img/auth.png" alt="Auth" class="carousel-item active">
+                        <img src="/img/auth1.png" alt="Auth 1" class="carousel-item">
+                    </a>
+                </div>
+                <button class="carousel-control prev">&#10094;</button>
+                <button class="carousel-control next">&#10095;</button>
+            </div>
+        </div>
+        
+
+        <div class="explainProjects">
+            <span>
+
+
+            </span>
+        </div>
+        
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit sequi officia provident asperiores illum praesentium veritatis ab dolor accusamus ratione, perferendis reprehenderit maiores maxime iusto aspernatur adipisci cumque voluptates perspiciatis?</p>
     </div>
 
@@ -153,6 +197,7 @@
 
 
     <p>Menu footer</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>
