@@ -55,6 +55,18 @@ li {
     }
 }
 
+.title-container {
+    flex-direction: column;
+}
+
+.iconsXp {
+    font-size: 27px;
+    color: #118C80;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 5px; /* Espaçamento entre os ícones */
+    
+}
 
 /* ADICIONANDO O EFEITO REVEAL - QUANDO O USUÁRIO ROLAR A PÁGINA OS CONTAINERS IRÃO APARECER */
 
